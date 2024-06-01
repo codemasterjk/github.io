@@ -1,13 +1,11 @@
-/* styles.css */
-
-/* Reset and Base Styles */
+/* Main CSS Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #f2f2f2; /* Light grey background */
     margin: 0;
     padding: 0;
-    color: #444;
+    color: #fff; /* White text */
 }
 
 .container {
@@ -16,7 +14,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation Styles */
 .navbar {
     background-color: #333;
     color: #fff;
@@ -37,7 +34,7 @@ body {
 
 .nav-links li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 20px; /* Increased spacing between navigation links */
 }
 
 .nav-links li a {
@@ -50,9 +47,8 @@ body {
     color: #ddd;
 }
 
-/* Hero Section */
 .hero {
-    background-color: #005d8e;
+    background-color: #005d8e; /* Dark blue background */
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -67,75 +63,53 @@ body {
     font-size: 1.5rem;
 }
 
-/* Section Titles and Descriptions */
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #005d8e;
+.about {
+    background-color: #fff; /* White background */
+    color: #005d8e; /* Blue text */
+    padding: 80px 0;
+    text-align: center;
 }
 
-.section-description {
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-    color: #444;
+.about .section-title {
+    color: #005d8e; /* Blue title */
 }
 
-/* Service Styles */
-.service {
-    margin-bottom: 40px;
+.about .section-description {
+    font-size: 1.2rem; /* Increased font size */
+    line-height: 1.8; /* Increased line height */
 }
 
-.service-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #005d8e;
+.services {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 80px 0;
+    text-align: center;
 }
 
-.service-description {
-    font-size: 1.1rem;
-    color: #444;
+.services .service-title {
+    color: #005d8e; /* Blue title */
 }
 
-/* Gallery Styles */
-.gallery-images img {
-    width: 100%;
-    margin-bottom: 20px;
+.gallery {
+    background-color: #001f3f; /* Dark blue background */
+    padding: 80px 0;
+    text-align: center;
 }
 
-/* Review Styles */
-.review {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 40px;
-    text-align: left;
+.reviews {
+    background-color: #fff; /* White background */
+    padding: 80px 0;
+    text-align: center;
 }
 
-.review-content {
-    margin-bottom: 20px;
-}
-
-.review-text {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-    color: #444;
-}
-
-.review-author {
-    font-style: italic;
-    font-size: 1rem;
-    color: #555;
-}
-
-/* Contact Section Styles */
 .contact {
-    background-color: #eaeaea;
-    padding: 100px 0;
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 80px 0;
+    text-align: center;
 }
 
 .contact form {
     margin-top: 40px;
-    text-align: center;
+    text-align: left;
 }
 
 .contact form input[type="text"],
@@ -143,28 +117,16 @@ body {
 .contact form input[type="tel"],
 .contact form textarea,
 .contact form select {
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    transition: border-color 0.3s ease;
 }
 
 .contact form textarea {
     height: 150px;
-}
-
-.contact form input[type="text"]:focus,
-.contact form input[type="email"]:focus,
-.contact form input[type="tel"]:focus,
-.contact form textarea:focus,
-.contact form select:focus {
-    border-color: #005d8e;
-    outline: none;
 }
 
 .contact form button {
@@ -182,7 +144,6 @@ body {
     background-color: #003649;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #333;
     color: #fff;
@@ -213,4 +174,58 @@ body {
 
 .social-links li a:hover {
     color: #ddd;
+}
+/* Home Section */
+#home {
+    padding-top: 150px; /* Increased padding for better spacing */
+}
+
+/* About Section */
+#about {
+    background-color: #fff; /* White background */
+}
+
+/* Services Section */
+.services {
+    background-color: #f2f2f2; /* Light grey background */
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #003649; /* Dark blue background */
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #fff; /* White background */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f2f2f2; /* Light grey background */
+    padding-bottom: 80px; /* Increased padding for better spacing */
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form input[type="tel"],
+.contact form textarea,
+.contact form select {
+    border-color: #005d8e; /* Blue border */
+}
+
+.contact form button {
+    background-color: #005d8e; /* Blue background */
+}
+
+.contact form button:hover {
+    background-color: #003649; /* Darker blue on hover */
+}
+
+.contact form input[type="text"]:focus,
+.contact form input[type="email"]:focus,
+.contact form input[type="tel"]:focus,
+.contact form textarea:focus,
+.contact form select:focus {
+    border-color: #003649; /* Darker blue on focus */
 }
