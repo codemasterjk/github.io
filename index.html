@@ -40,18 +40,17 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="services" style="background-color: #003649;">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
+            <h2 class="section-title" style="color: #fff;">Our Services</h2>
             <div class="service">
                 <h3 class="service-title">Flooring Installation</h3>
-                <p class="service-description">We offer a wide range of flooring installation services, including:</p>
-                <ul>
-                    <li>Hardwood</li>
-                    <li>Laminate</li>
-                    <li>Tile</li>
-                    <li>Vinyl</li>
-                </ul>
+                <p class="service-description" style="color: #fff;">
+                    Hardwood<br>
+                    Laminate<br>
+                    Tile<br>
+                    Vinyl
+                </p>
             </div>
             <div class="service">
                 <h3 class="service-title">Floor Removal</h3>
@@ -69,9 +68,9 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery" style="background-color: #003649;">
         <div class="container">
-            <h2 class="section-title">Gallery</h2>
+            <h2 class="section-title" style="color: #fff;">Gallery</h2>
             <!-- Gallery Images Here -->
         </div>
     </section>
@@ -80,15 +79,39 @@
     <section id="reviews" class="reviews">
         <div class="container">
             <h2 class="section-title">Customer Reviews</h2>
-            <!-- Reviews Here -->
+            <div class="review">
+                <div class="review-content">
+                    <p class="review-text">"Exceptional service! Viktoria Flooring LLC provided professional and efficient installation of our new hardwood floors. Highly recommended!"</p>
+                    <p class="review-author">- John Doe</p>
+                </div>
+            </div>
+            <div class="review">
+                <div class="review-content">
+                    <p class="review-text">"We are extremely satisfied with the quality of work done by Viktoria Flooring LLC. The team was courteous and completed the job on time. Will definitely use their services again!"</p>
+                    <p class="review-author">- Jane Smith</p>
+                </div>
+            </div>
+            <!-- Additional Reviews Here -->
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" style="background-color: #444;">
         <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <!-- Contact Form Here -->
+            <h2 class="section-title" style="color: #fff;">Contact Us</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required><br>
+                <select name="inquiry">
+                    <option value="" disabled selected>Select Inquiry Type</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="quote">Request a Quote</option>
+                    <option value="appointment">Schedule an Appointment</option>
+                </select><br>
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
