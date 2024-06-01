@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Additional CSS Styles */
+        /* Main CSS Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             background-color: #f2f2f2; /* Light grey background */
             margin: 0;
             padding: 0;
-            color: #444; /* Dark grey text */
+            color: #fff; /* White text */
         }
 
         .container {
@@ -75,7 +75,7 @@
         .about {
             background-color: #fff; /* White background */
             color: #005d8e; /* Blue text */
-            padding: 80px 0;
+            padding: 60px 0; /* Decreased padding */
             text-align: center;
         }
 
@@ -84,30 +84,23 @@
         }
 
         .about .section-description {
-            font-size: 1.1rem; /* Decreased font size */
-            margin-bottom: 20px; /* Decreased margin */
+            font-size: 1.2rem; /* Decreased font size */
+            line-height: 1.8; /* Increased line height */
+            margin-bottom: 30px; /* Decreased margin bottom */
         }
 
         .services {
-            background-color: #f2f2f2; /* Light grey background */
+            background-color: #e6e6e6; /* Light grey background */
             padding: 80px 0;
             text-align: center;
         }
 
         .services .service {
-            margin-bottom: 60px; /* Increased margin for better spacing */
-        }
-
-        .services .service-title {
-            color: #005d8e; /* Blue title text */
-        }
-
-        .services .service-description {
-            color: #444; /* Dark grey text */
+            margin-bottom: 40px; /* Decreased space between services */
         }
 
         .gallery {
-            background-color: #003649; /* Dark blue background */
+            background-color: #003366; /* Dark blue background */
             padding: 80px 0;
             text-align: center;
         }
@@ -118,16 +111,8 @@
             text-align: center;
         }
 
-        .reviews .section-title {
-            color: #005d8e; /* Blue title text */
-        }
-
-        .reviews .review-content {
-            color: #444; /* Dark grey text */
-        }
-
         .contact {
-            background-color: #7f7f7f; /* Darker grey background */
+            background-color: #f2f2f2; /* Light grey background */
             padding: 80px 0;
             text-align: center;
         }
@@ -152,10 +137,6 @@
 
         .contact form textarea {
             height: 150px;
-        }
-
-        .contact form select {
-            color: #444; /* Dark grey text */
         }
 
         .contact form button {
@@ -187,28 +168,91 @@
         .social-links {
             list-style-type: none;
             padding: 0;
-            margin-top: 20px;
-        }
+margin-top: 20px;
+}
+    .social-links li {
+        display: inline;
+        margin: 0 10px;
+    }
 
-        .social-links li {
-            display: inline;
-            margin: 0 10px;
-        }
+    .social-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
 
-        .social-links li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
+    .social-links li a:hover {
+        color: #ddd;
+    }
 
-        .social-links li a:hover {
-            color: #ddd;
-        }
-    </style>
+    /* Additional CSS Styles */
+
+    /* Home Section */
+    #home {
+        background-color: #f2f2f2; /* Light grey background */
+        color: #005d8e; /* Blue text */
+    }
+
+    /* About Section */
+    #about {
+        background-color: #fff; /* White background */
+    }
+
+    .about .section-title {
+        color: #005d8e; /* Blue title text */
+    }
+
+    /* Services Section */
+    .services {
+        background-color: #e6e6e6; /* Light grey background */
+    }
+
+    .services .service-title {
+        color: #005d8e; /* Blue title text */
+    }
+
+    /* Gallery Section */
+    #gallery {
+        background-color: #003366; /* Dark blue background */
+    }
+
+    /* Reviews Section */
+    .reviews {
+        background-color: #fff; /* White background */
+    }
+
+    /* Contact Section */
+    .contact {
+        background-color: #f2f2f2; /* Light grey background */
+    }
+
+    .contact form input[type="text"],
+    .contact form input[type="email"],
+    .contact form input[type="tel"],
+    .contact form textarea,
+    .contact form select {
+        border-color: #005d8e; /* Blue border */
+    }
+
+    .contact form button {
+        background-color: #005d8e; /* Blue background */
+    }
+
+    .contact form button:hover {
+        background-color: #003649; /* Darker blue on hover */
+    }
+
+    .contact form input[type="text"]:focus,
+    .contact form input[type="email"]:focus,
+    .contact form input[type="tel"]:focus,
+    .contact form textarea:focus,
+    .contact form select:focus {
+        border-color: #003649; /* Darker blue on focus */
+    }
+</style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
+    <header class="navbar">
         <div class="container">
             <h1 class="logo">Viktoria Flooring LLC</h1>
             <ul class="nav-links">
@@ -220,127 +264,106 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
+    </header>
     <section id="home" class="hero">
-        <div class="container">
-            <h2 class="hero-title">Welcome to Viktoria Flooring LLC</h2>
-            <p class="hero-subtitle">Exceptional flooring installation and replacement services</p>
+    <div class="container">
+        <h2 class="hero-title">Welcome to Viktoria Flooring LLC</h2>
+        <p class="hero-subtitle">Exceptional flooring installation and replacement services</p>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service">
+            <h3 class="service-title">Flooring Installation</h3>
+            <p class="service-description">Hardwood<br>Laminate<br>Tile<br>Vinyl<br>Carpet</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <p class="section-description">At Viktoria Flooring LLC, we specialize in providing high-quality flooring installation and replacement services. With years of experience and a commitment to excellence, we ensure that every project is completed to the highest standards of craftsmanship and professionalism.</p
-            <p class="section-description">Our team of skilled professionals is dedicated to delivering outstanding results, whether you're looking to upgrade your home with beautiful new floors or need to replace old, worn-out flooring. We take pride in our work and strive to exceed our customers' expectations on every job.</p>
+        <div class="service">
+            <h3 class="service-title">Floor Removal</h3>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-       <style>
-    /* CSS code to remove bullet points */
-    .service ul {
-        list-style-type: none;
-        padding-left: 0; /* Optional: Remove default left padding */
-    }
-</style>
-
-<!-- HTML code for the service section -->
-<div class="service">
-    <h3 class="service-title">Flooring Installation</h3>
-    <ul>
-        <li>Hardwood</li>
-        <li>Laminate</li>
-        <li>Tile</li>
-        <li>Vinyl</li>
-        <li>Carpet</li>
-    </ul>
-</div>
-
-            <div class="service">
-                <h3 class="service-title">Floor Removal</h3>
-            </div>
-            <div class="service">
-                <h3 class="service-title">Baseboard Installation</h3>
-            </div>
-            <div class="service">
-                <h3 class="service-title">Floor Reinstallation</h3>
-            </div>
-            <div class="service">
-                <h3 class="service-title">Disposal</h3>
-            </div>
+        <div class="service">
+            <h3 class="service-title">Baseboard Installation</h3>
         </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <!-- Gallery images go here -->
+        <div class="service">
+            <h3 class="service-title">Floor Reinstallation</h3>
         </div>
-    </section>
+        <div class="service">
+            <h3 class="service-title">Disposal</h3>
+        </div>
+    </div>
+</section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="reviews">
-        <div class="container">
-            <h2 class="section-title">Customer Reviews</h2>
-            <div class="review">
+<section id="gallery" class="gallery">
+    <div class="container">
+        <!-- Gallery Images Here -->
+    </div>
+</section>
+
+<section id="reviews" class="reviews">
+    <div class="container">
+        <h2 class="section-title">Customer Reviews</h2>
+        <div class="review">
+            <div class="review-content">
                 <p class="review-text">"Stepan and his team were great! Stepan was very professional and timely with his communication. His employee was punctual and did great work. We are so happy with our floors, and will definitely be booking with this company in the future."</p>
-                <p class="review-author">Nicole K.</p>
+                <p class="review-author">- Nicole K.</p>
             </div>
-            <div class="review">
+        </div>
+        <div class="review">
+            <div class="review-content">
                 <p class="review-text">"They really did an excellent job installing the flooring, their professionalism and quality of work are certainly praiseworthy. Having skilled and competent professionals handling such tasks can make a significant difference in the outcome. Overall, I had a positive experience with their services. I would recommend them to my friends and neighbors without hesitation."</p>
-                <p class="review-author">Rui C.</p>
+                <p class="review-author">- Rui C.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="tel" name="phone" placeholder="Your Phone" required>
-                <select name="material" id="material" required>
-                    <option value="" disabled selected>Select Material</option>
-                    <option value="hardwood">Hardwood</option>
-                    <option value="laminate">Laminate</option>
-                    <option value="tile">Tile</option>
-                    <option value="vinyl">Vinyl</option>
-                    <option value="carpet">Carpet</option>
-                </select>
-                <select name="sq-footage" id="sq-footage" required>
-                    <option value="" disabled selected>Select Sq Footage</option>
-                    <option value="100-500">100 - 500 sq ft</option>
-                    <option value="501-750">501 - 750 sq ft</option>
-                    <option value="751-1000">751 - 1000 sq ft</option>
-                    <option value="1001-1500">1001 - 1500 sq ft</option>
-                    <option value="1501-2000">1501 - 2000 sq ft</option>
-                    <option value="2000+">2000+ sq ft</option>
-                </select>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Viktoria Flooring LLC. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone" required>
+            <select name="material" required>
+                <option value="" disabled selected>Select Material</option>
+                <option value="hardwood">Hardwood</option>
+                <option value="laminate">Laminate</option>
+                <option value="tile">Tile</option>
+                <option value="vinyl">Vinyl</option>
+                <option value="carpet">Carpet</option>
+            </select>
+            <select name="sqfootage" required>
+                <option value="" disabled selected>Select Square Footage</option>
+                <option value="100-500">100-500 sq ft</option>
+                <option value="501-750">501-750 sq ft</option>
+                <option value="751-1000">751-1000 sq ft</option>
+                <option value="1001-1500">1001
+-1500 sq ft</option>
+<option value="1501-2000">1501-2000 sq ft</option>
+<option value="2001+">2000+ sq ft</option>
+</select>
+<textarea name="message" placeholder="Your Message" required></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Viktoria Flooring LLC</p>
+        <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
