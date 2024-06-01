@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<head>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,10 +11,10 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            background-color: #f2f2f2; /* Light grey background */
+            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-            color: #333; /* Dark grey text */
+            color: #333;
         }
 
         .container {
@@ -26,7 +24,7 @@
         }
 
         .navbar {
-            background-color: #003366; /* Dark blue navbar */
+            background-color: #003366;
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -35,7 +33,8 @@
         .logo {
             font-size: 1.5rem;
             margin: 0;
-            color: #fff; /* White logo */
+            color: #fff;
+            text-transform: uppercase;
         }
 
         .nav-links {
@@ -53,15 +52,15 @@
             color: #fff;
             text-decoration: none;
             transition: color 0.3s ease;
-            font-weight: bold; /* Bold navigation links */
+            font-weight: bold;
         }
 
         .nav-links li a:hover {
-            color: #99ccff; /* Light blue hover color */
+            color: #99ccff;
         }
 
         .hero {
-            background-color: #66a3ff; /* Medium blue hero background */
+            background-color: #005d8e;
             color: #fff;
             padding: 100px 0;
             text-align: center;
@@ -70,16 +69,103 @@
         .hero-title {
             font-size: 3rem;
             margin-bottom: 20px;
-            font-weight: bold; /* Bold hero title */
+            font-weight: bold;
         }
 
         .hero-subtitle {
             font-size: 1.5rem;
-            font-weight: bold; /* Bold hero subtitle */
+            font-weight: bold;
         }
 
-        /* Add more styles as needed */
+        .section {
+            padding: 80px 0;
+            text-align: center;
+        }
 
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #005d8e;
+            text-transform: uppercase;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .service {
+            margin-bottom: 40px;
+        }
+
+        .service-title {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #005d8e;
+            text-transform: uppercase;
+        }
+
+        .service-description {
+            font-size: 1.1rem;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .social-links li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .social-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .social-links li a:hover {
+            color: #ddd;
+        }
+
+        /* Different section themes */
+        #about {
+            background-color: #ECEFF1; /* Light Blue Grey */
+            color: #444;
+        }
+
+        #services {
+            background-color: #004D40; /* Dark Teal */
+            color: #fff;
+        }
+
+        #gallery {
+            background-color: #CFD8DC; /* Blue Grey */
+            color: #333;
+        }
+
+        #reviews {
+            background-color: #01579B; /* Dark Blue */
+            color: #fff;
+        }
+
+        #contact {
+            background-color: #BDBDBD; /* Grey */
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -106,12 +192,8 @@
         </div>
     </section>
 
-    <!-- Add more sections with improved styling -->
-
-</body>
-</html>
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About Us</h2>
             <p class="section-description">At Viktoria Flooring LLC, we take pride in providing top-notch floor installation and replacement services. With over 6 years of experience, we are dedicated to delivering exceptional results and customer satisfaction.</p>
@@ -120,7 +202,7 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="section">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
             <div class="service">
@@ -136,7 +218,7 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="section">
         <div class="container">
             <h2 class="section-title">Gallery</h2>
             <!-- Add images of completed flooring projects -->
@@ -149,7 +231,7 @@
     </section>
 
     <!-- Reviews Section -->
-    <section id="reviews" class="reviews">
+    <section id="reviews" class="section">
         <div class="container">
             <h2 class="section-title">Customer Reviews</h2>
             <div class="review">
@@ -169,7 +251,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section">
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
             <p class="section-description">Ready to transform your floors? Contact Viktoria Flooring LLC today for a free estimate!</p>
@@ -182,12 +264,12 @@
                 <select name="flooring_amount" required>
                     <option value="" disabled selected>Amount of Flooring to be Replaced</option>
                     <option value="100-250">0 - 500 sq ft</option>
-                    <option value="250-500">501 - 750 sq ft</option>
-                    <option value="501-750">751 - 1000 sq ft</option>
-                    <option value="751-1000">1001 - 1500 sq ft</option>
-                    <option value="1001-1500">1501 - 2000 sq ft</option>
-                    <option value="1501-2000">2001 - 2500 sq ft</option>
-                    <option value="2001+">2501+ sq ft</option>
+                    <option value="250-500">0 - 500 sq ft</option>
+                    <option value="501-750">501 - 750 sq ft</option>
+                    <option value="751-1000">751 - 1000 sq ft</option>
+                    <option value="1001-1500">1001 - 1500 sq ft</option>
+                    <option value="1501-2000">1501 - 2000 sq ft</option>
+                    <option value="2001+">2001+ sq ft</option>
                 </select>
                 <select name="material" required>
                     <option value="" disabled selected>Select Material to be Installed</option>
@@ -211,213 +293,10 @@
             <ul class="social-links">
                 <li><a href="https://facebook.com/viktoriaflooring" target="_blank"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/viktoriaflooring" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://instagram.com/viktoriaflooring
-" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://instagram.com/viktoriaflooring" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 <!-- Add more social media links as needed -->
             </ul>
         </div>
     </footer>
 </body>
 </html>
-/* Reset default styles */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Basic styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-    color: #444;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
-
-.navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-weight: bold; /* Added bold font weight */
-}
-
-.nav-links li a:hover {
-    color: #0c69ff; /* Bold blue highlight on hover */
-}
-
-.hero {
-    background-color: #005d8e;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero-subtitle {
-    font-size: 1.5rem;
-}
-
-.about, .services, .gallery, .reviews, .contact {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #005d8e;
-}
-
-.section-description {
-    font-size: 1.1rem;
-    margin-bottom: 40px;
-}
-
-.service {
-    margin-bottom: 40px;
-}
-
-.service-title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #005d8e;
-    border: 2px solid #005d8e; /* Add box around service title */
-    padding: 10px; /* Add padding around service title */
-    display: inline-block; /* Display as inline-block */
-    border-radius: 5px; /* Rounded corners */
-}
-
-.service-description {
-    font-size: 1.1rem;
-}
-
-.gallery-images img {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.review {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 40px;
-    text-align: left;
-}
-
-.review-content {
-    margin-bottom: 20px;
-}
-
-.review-text {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-.review-author {
-    font-style: italic;
-    font-size: 1rem;
-    color: #555;
-}
-
-.contact form {
-    margin-top: 40px;
-    text-align: left;
-}
-
-.contact form input[type="text"],
-.contact form input[type="email"],
-.contact form input[type="tel"],
-.contact form textarea,
-.contact form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact form textarea {
-    height: 150px;
-}
-
-.contact form button {
-    background-color: #005d8e;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-}
-
-.contact form button:hover {
-    background-color: #003649;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer p {
-    margin: 0;
-}
-
-.social-links {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.social-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.social-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.social-links li a:hover {
-    color: #ddd;
-}
