@@ -14,7 +14,7 @@
             background-color: #f2f2f2; /* Light grey background */
             margin: 0;
             padding: 0;
-            color: #fff; /* White text */
+            color: #444; /* Dark grey text */
         }
 
         .container {
@@ -75,7 +75,7 @@
         .about {
             background-color: #fff; /* White background */
             color: #005d8e; /* Blue text */
-            padding: 60px 0; /* Decreased padding */
+            padding: 80px 0;
             text-align: center;
         }
 
@@ -84,15 +84,18 @@
         }
 
         .about .section-description {
-            font-size: 1.2rem; /* Increased font size */
-            line-height: 1.8; /* Increased line height */
-            margin-bottom: 30px; /* Decreased bottom margin */
+            font-size: 1.1rem; /* Decreased font size */
+            margin-bottom: 20px; /* Decreased margin */
         }
 
         .services {
             background-color: #f2f2f2; /* Light grey background */
             padding: 80px 0;
             text-align: center;
+        }
+
+        .services .service {
+            margin-bottom: 60px; /* Increased margin for better spacing */
         }
 
         .services .service-title {
@@ -115,9 +118,16 @@
             text-align: center;
         }
 
+        .reviews .section-title {
+            color: #005d8e; /* Blue title text */
+        }
+
+        .reviews .review-content {
+            color: #444; /* Dark grey text */
+        }
+
         .contact {
-            background-color: #777; /* Dark grey background */
-            color: #fff; /* White text */
+            background-color: #7f7f7f; /* Darker grey background */
             padding: 80px 0;
             text-align: center;
         }
@@ -142,6 +152,10 @@
 
         .contact form textarea {
             height: 150px;
+        }
+
+        .contact form select {
+            color: #444; /* Dark grey text */
         }
 
         .contact form button {
@@ -197,133 +211,127 @@
     <nav class="navbar">
         <div class="container">
             <h1 class="logo">Viktoria Flooring LLC</h1>
-            <ul class
-="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</div>
-</nav>
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="container">
-        <h2 class="hero-title">Welcome to Viktoria Flooring LLC</h2>
-        <p class="hero-subtitle">Exceptional flooring installation and replacement services</p>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="about">
-    <div class="container">
-        <h2 class="section-title">About Us</h2>
-        <p class="section-description">At Viktoria Flooring LLC, we specialize in providing high-quality flooring installation and replacement services. With years of experience and a commitment to excellence, we ensure that every project is completed to the highest standards of craftsmanship and professionalism.</p>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="services">
-    <div class="container">
-        <h2 class="section-title">Our Services</h2>
-        <div class="service">
-            <h3 class="service-title">Flooring Installation</h3>
-            <p class="service-description">We offer a wide range of flooring installation services, including:</p>
-            <ul>
-                <li>Hardwood</li>
-                <li>Laminate</li>
-                <li>Tile</li>
-                <li>Vinyl</li>
-                <li>Carpet</li>
-                <li>And more...</li>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-        <div class="service">
-            <h3 class="service-title">Additional Services</h3>
-            <p class="service-description">In addition to flooring installation, we also provide:</p>
-            <ul>
-                <li>Floor removal</li>
-                <li>Baseboard installation</li>
-                <li>Reinstallation of flooring</li>
-                <li>Disposal of old flooring materials</li>
-            </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2 class="hero-title">Welcome to Viktoria Flooring LLC</h2>
+            <p class="hero-subtitle">Exceptional flooring installation and replacement services</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Gallery Section -->
-<section id="gallery" class="gallery">
-    <div class="container">
-        <h2 class="section-title">Gallery</h2>
-        <!-- Gallery Images Here -->
-    </div>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-description">At Viktoria Flooring LLC, we specialize in providing high-quality flooring installation and replacement services. With years of experience and a commitment to excellence, we ensure that every project is completed to the highest standards of craftsmanship and professionalism.</p
+            <p class="section-description">Our team of skilled professionals is dedicated to delivering outstanding results, whether you're looking to upgrade your home with beautiful new floors or need to replace old, worn-out flooring. We take pride in our work and strive to exceed our customers' expectations on every job.</p>
+        </div>
+    </section>
 
-<!-- Reviews Section -->
-<section id="reviews" class="reviews">
-    <div class="container">
-        <h2 class="section-title">Customer Reviews</h2>
-        <div class="review">
-            <div class="review-content">
-                <p class="review-text">Stepan and his team were great! Stepan was very professional and timely with his communication. His employee was punctual and did great work. We are so happy with our floors, and will definitely be booking with this company in the future.</p>
-                <p class="review-author">Nicole K.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service">
+                <h3 class="service-title">Flooring Installation</h3>
+                <p class="service-description">Choose from a variety of flooring materials:</p>
+                <ul>
+                    <li>Hardwood</li>
+                    <li>Laminate</li>
+                    <li>Tile</li>
+                    <li>Vinyl</li>
+                    <li>Carpet</li>
+                </ul>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Floor Removal</h3>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Baseboard Installation</h3>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Floor Reinstallation</h3>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Disposal</h3>
             </div>
         </div>
-        <div class="review">
-            <div class="review-content">
-                <p class="review-text">They really did an excellent job installing the flooring, their professionalism and quality of work are certainly praiseworthy. Having skilled and competent professionals handling such tasks can make a significant difference in the outcome. Overall, I had a positive experience with their services. I would recommend them to my friends and neighbors without hesitation.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <!-- Gallery images go here -->
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="review">
+                <p class="review-text">"Stepan and his team were great! Stepan was very professional and timely with his communication. His employee was punctual and did great work. We are so happy with our floors, and will definitely be booking with this company in the future."</p>
+                <p class="review-author">Nicole K.</p>
+            </div>
+            <div class="review">
+                <p class="review-text">"They really did an excellent job installing the flooring, their professionalism and quality of work are certainly praiseworthy. Having skilled and competent professionals handling such tasks can make a significant difference in the outcome. Overall, I had a positive experience with their services. I would recommend them to my friends and neighbors without hesitation."</p>
                 <p class="review-author">Rui C.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-    <div class="container">
-        <h2 class="section-title">Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <input type="tel" placeholder="Your Phone Number">
-            <textarea placeholder="Your Message"></textarea>
-            <select name="material" id="material">
-                <option value="" selected disabled>Select Material</option>
-                <option value="hardwood">Hardwood</option>
-                <option value="laminate">Laminate</option>
-                <option value="tile">Tile</option>
-                <option value="vinyl">Vinyl</option>
-                <option value="carpet">Carpet</option>
-            </select>
-            <select name="sqft" id="sqft">
-                <option value="" selected disabled>Select Square Footage</option>
-                <option value="100-500">100-500 sq ft</option>
-                <option value="501-750">501-750 sq ft</option>
-                <option value="751-1000">751-1000 sq ft</option>
-                <option value="1001-1500">1001-1500 sq ft</option>
-                <option value="1501-2000">1501-2000 sq ft</option>
-                <option value="2000+">2000+ sq ft</option>
-            </select>
-            <button type="submit">Submit</button>
-        </form>
-    </div>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone" required>
+                <select name="material" id="material" required>
+                    <option value="" disabled selected>Select Material</option>
+                    <option value="hardwood">Hardwood</option>
+                    <option value="laminate">Laminate</option>
+                    <option value="tile">Tile</option>
+                    <option value="vinyl">Vinyl</option>
+                    <option value="carpet">Carpet</option>
+                </select>
+                <select name="sq-footage" id="sq-footage" required>
+                    <option value="" disabled selected>Select Sq Footage</option>
+                    <option value="100-500">100 - 500 sq ft</option>
+                    <option value="501-750">501 - 750 sq ft</option>
+                    <option value="751-1000">751 - 1000 sq ft</option>
+                    <option value="1001-1500">1001 - 1500 sq ft</option>
+                    <option value="1501-2000">1501 - 2000 sq ft</option>
+                    <option value="2000+">2000+ sq ft</option>
+                </select>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2024 Viktoria Flooring LLC. All rights reserved.</p>
-        <ul class="social-links">
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </div>
-</footer>
-
-<!-- Font Awesome Script -->
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Viktoria Flooring LLC. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
