@@ -680,6 +680,19 @@ body {
 .reviews .review-content {
     color: #444; /* Dark grey text */
 }
+.reviews-container {
+    display: flex;
+    justify-content: space-between; /* Distribute reviews evenly */
+}
+
+.review {
+    width: 48%; /* Adjust the width as needed */
+}
+
+.review-author {
+    font-weight: bold; /* Bold the review author's name */
+}
+
 
 /* Contact Section */
 .contact {
@@ -748,6 +761,18 @@ body {
 .reviews .review-content {
     color: #444; /* Dark grey text */
 }
+.reviews-container {
+    display: flex;
+    justify-content: space-between; /* Distribute reviews evenly */
+}
+
+.review {
+    width: 48%; /* Adjust the width as needed */
+}
+
+.review-author {
+    font-weight: bold; /* Bold the review author's name */
+}
 
 /* Contact Section */
 .contact {
@@ -807,6 +832,12 @@ body {
     text-align: center;
 }
 
+.customer-reviews .reviews-container {
+    display: flex;
+    justify-content: space-between; /* Distribute reviews evenly */
+    flex-wrap: wrap; /* Allow reviews to wrap to the next line if needed */
+}
+
 .customer-reviews .review {
     background-color: #f2f2f2; /* Light grey background */
     border-radius: 10px;
@@ -814,6 +845,7 @@ body {
     margin-bottom: 40px;
     text-align: left;
     color: #444; /* Dark grey text */
+    width: 48%; /* Adjust the width as needed */
 }
 
 .customer-reviews .review-content {
@@ -829,7 +861,9 @@ body {
     font-style: italic;
     font-size: 1rem;
     color: #555;
+    font-weight: bold; /* Bold the review author's name */
 }
+
 /* Additional CSS Styles */
 
 /* Welcome Section 2 */
