@@ -40,17 +40,20 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services" style="background-color: #003649;">
+    <section id="services" class="services" style="background-color: #f2f2f2;">
         <div class="container">
-            <h2 class="section-title" style="color: #fff;">Our Services</h2>
+            <h2 class="section-title">Our Services</h2>
             <div class="service">
                 <h3 class="service-title">Flooring Installation</h3>
-                <p class="service-description" style="color: #fff;">
-                    Hardwood<br>
-                    Laminate<br>
-                    Tile<br>
-                    Vinyl
+                <p class="service-description">Select Material:
+                    <select name="material">
+                        <option value="hardwood">Hardwood</option>
+                        <option value="laminate">Laminate</option>
+                        <option value="tile">Tile</option>
+                        <option value="vinyl">Vinyl</option>
+                    </select>
                 </p>
+                <p class="service-description">Square Footage: <input type="number" name="sq_footage" required></p>
             </div>
             <div class="service">
                 <h3 class="service-title">Floor Removal</h3>
@@ -96,7 +99,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact" style="background-color: #444;">
+    <section id="contact" class="contact" style="background-color: #666;">
         <div class="container">
             <h2 class="section-title" style="color: #fff;">Contact Us</h2>
             <form action="#" method="POST">
