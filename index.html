@@ -3,95 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Viktoria Flooring</title>
+    <title>Viktoria Flooring LLC - Floor Installation or Replacement</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
         <div class="container">
-            <h1>Viktoria Flooring</h1>
-            <p>Your Trusted Flooring Solution Provider</p>
-        </div>
-    </header>
-
-    <!-- Navigation Menu -->
-    <nav>
-        <div class="container">
-            <ul>
+            <h1 class="logo">Viktoria Flooring LLC</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#products">Products</a></li>
                 <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Services Section -->
-        <section id="services" class="section">
-            <div class="container">
-                <h2>Our Services</h2>
-                <p>Viktoria Flooring offers a wide range of flooring solutions to meet your needs:</p>
-                <ul>
-                   <li>Hardwood Flooring</li>
-                    <li>Laminate Flooring</li>
-                    <li>Luxury Vinyl Plank</li>
-                    <li>Laminate Flooring</li>
-                    <!-- Add more services as needed -->
-                </ul>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2 class="hero-title">Welcome to Viktoria Flooring LLC</h2>
+            <p class="hero-subtitle">Exceptional Floor Installation and Replacement Services</p>
+        </div>
+    </section>
 
-        <!-- Products Section -->
-        <section id="products" class="section">
-            <div class="container">
-                <h2>Our Products</h2>
-                <p>We offer high-quality flooring products from leading manufacturers:</p>
-                <ul>
-                    <li>Hardwood Flooring</li>
-                    <li>Laminate Flooring</li>
-                    <li>Luxury Vinyl Plank</li>
-                    <li>Laminate Flooring</li>
-                    <!-- Add more products as needed -->
-                </ul>
-            </div>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-description">At Viktoria Flooring LLC, we take pride in providing top-notch floor installation and replacement services. With over 6 years of experience, we are dedicated to delivering exceptional results and customer satisfaction.</p>
+            <p class="section-description">Our team is comprised of skilled professionals who are committed to quality craftsmanship and attention to detail. We strive to exceed our customers' expectations on every project.</p>
+        </div>
+    </section>
 
-        <!-- Gallery Section -->
-        <section id="gallery" class="section">
-            <div class="container">
-                <h2>Gallery</h2>
-                <!-- Add images of completed flooring projects -->
-                <div class="gallery">
-                    <img src="gallery-image1.jpg" alt="Flooring Project 1">
-                    <img src="gallery-image2.jpg" alt="Flooring Project 2">
-                    <!-- Add more images as needed -->
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service">
+                <h3 class="service-title">Floor Installation</h3>
+                <p class="service-description">Professional installation of hardwood, laminate, vinyl, and engineered flooring.</p>
+            </div>
+            <div class="service">
+                <h3 class="service-title">Floor Replacement</h3>
+                <p class="service-description">Expert removal of old flooring and installation of new flooring materials.</p>
+            </div>
+            <!-- Add more services as needed -->
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <!-- Add images of completed flooring projects -->
+            <div class="gallery-images">
+                <img src="gallery-image1.jpg" alt="Flooring Project 1">
+                <img src="gallery-image2.jpg" alt="Flooring Project 2">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="review">
+                <div class="review-content">
+                    <p class="review-text">"Exceptional service! Viktoria Flooring LLC exceeded my expectations. Highly recommend!"</p>
+                    <p class="review-author">- John D.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <p>For inquiries or to schedule a consultation, please contact us:</p>
-                <ul>
-                    <li>Email: viktoriaflooring@gmail.com</li>
-                    <li>Phone: 253-985-3475</li>
-                    <li>Address: King County, Washington</li>
-                </ul>
+            <div class="review">
+                <div class="review-content">
+                    <p class="review-text">"Professional and efficient. Viktoria Flooring LLC delivered outstanding results."</p>
+                    <p class="review-author">- Sarah T.</p>
+                </div>
             </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Viktoria Flooring. All rights reserved.</p>
+            <!-- Add more reviews as needed -->
         </div>
-    </footer>
-</body>
-</html>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-description">Ready to transform your floors? Contact Viktoria Flooring LLC today for a free estimate!</p>
+            
+            <!-- Contact Form -->
+            <form action="submit_contact.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Viktoria Flooring LLC. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://facebook.com/viktoriaflooring" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/viktoriaflooring" target="_blank">Twitter</a></
