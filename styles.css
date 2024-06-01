@@ -804,3 +804,61 @@ body {
     font-size: 1rem;
     color: #555;
 }
+/* Additional CSS Styles */
+
+/* Welcome Section 2 */
+#welcome-section-2 {
+    background-color: #005d8e; /* Dark blue background */
+    color: #fff; /* White text */
+}
+
+/* About Section */
+#about {
+    background-color: #fff; /* White background */
+    color: #444; /* Dark grey text */
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Our Services Section */
+.services {
+    background-color: #005d8e; /* Dark blue background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services .service {
+    margin-bottom: 10px; /* Decreased margin */
+}
+
+.services .service-title,
+.services .service-description {
+    color: #fff; /* White text */
+}
+
+/* Gallery Section */
+#gallery {
+    background-color: #003649; /* Dark blue background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+#gallery .section-title {
+    color: #fff; /* White text */
+}
+
+.gallery-images img {
+    width: 23%; /* Adjusted width for four photos */
+    margin: 10px; /* Added margin between photos */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333; /* Darker grey background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact form select option {
+    color: #444; /* Dark grey text for dropdown options */
+}
