@@ -307,6 +307,18 @@ body {
 .right-review {
     float: right; /* Float the right review to the right */
 }
+.reviews-container {
+    display: flex;
+    justify-content: space-between; /* Distribute reviews evenly */
+}
+
+.review {
+    width: 48%; /* Adjust the width as needed */
+}
+
+.review-author {
+    font-weight: bold; /* Bold the review author's name */
+}
 
 .contact {
     background-color: #4d4d4d; /* Dark grey background */
