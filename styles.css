@@ -293,6 +293,20 @@ body {
     padding: 80px 0;
     text-align: center;
 }
+.review {
+    width: 45%; /* Adjust the width as needed */
+    display: inline-block;
+    vertical-align: top; /* Align reviews to the top */
+    margin: 0 2.5%; /* Add some margin between reviews */
+}
+
+.left-review {
+    float: left; /* Float the left review to the left */
+}
+
+.right-review {
+    float: right; /* Float the right review to the right */
+}
 
 .contact {
     background-color: #4d4d4d; /* Dark grey background */
