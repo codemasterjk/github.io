@@ -5,7 +5,7 @@ body {
     background-color: #f2f2f2; /* Light grey background */
     margin: 0;
     padding: 0;
-    color: #fff; /* White text */
+    color: #444; /* Dark grey text */
 }
 
 .container {
@@ -34,7 +34,7 @@ body {
 
 .nav-links li {
     display: inline;
-    margin: 0 20px; /* Increased spacing between navigation links */
+    margin: 0 20px; /* Increased margin for better spacing */
 }
 
 .nav-links li a {
@@ -50,43 +50,44 @@ body {
 .hero {
     background-color: #005d8e; /* Dark blue background */
     color: #fff;
-    padding: 100px 0;
+    padding: 80px 0; /* Reduced padding */
     text-align: center;
 }
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Reduced font size */
     margin-bottom: 20px;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reduced font size */
 }
 
 .about {
     background-color: #fff; /* White background */
     color: #005d8e; /* Blue text */
-    padding: 80px 0;
+    padding: 60px 0; /* Reduced padding */
     text-align: center;
 }
 
 .about .section-title {
-    color: #005d8e; /* Blue title */
+    color: #005d8e; /* Blue title text */
 }
 
 .about .section-description {
-    font-size: 1.2rem; /* Increased font size */
-    line-height: 1.8; /* Increased line height */
+    font-size: 1.1rem; /* Reduced font size */
+    line-height: 1.6; /* Adjusted line height */
+    margin-bottom: 20px; /* Reduced margin */
 }
 
 .services {
-    background-color: #f2f2f2; /* Light grey background */
+    background-color: #e6e6e6; /* Light grey background */
     padding: 80px 0;
     text-align: center;
 }
 
-.services .service-title {
-    color: #005d8e; /* Blue title */
+.services .service-description {
+    color: #444; /* Dark grey text */
 }
 
 .gallery {
@@ -102,7 +103,8 @@ body {
 }
 
 .contact {
-    background-color: #f2f2f2; /* Light grey background */
+    background-color: #444; /* Darker grey background */
+    color: #fff; /* White text */
     padding: 80px 0;
     text-align: center;
 }
@@ -123,6 +125,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+    background-color: #fff; /* White background */
+    color: #444; /* Dark grey text */
 }
 
 .contact form textarea {
@@ -130,7 +134,7 @@ body {
 }
 
 .contact form button {
-    background-color: #005d8e;
+    background-color: #005d8e; /* Blue background */
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -141,7 +145,7 @@ body {
 }
 
 .contact form button:hover {
-    background-color: #003649;
+    background-color: #003649; /* Darker blue on hover */
 }
 
 .footer {
@@ -175,24 +179,30 @@ body {
 .social-links li a:hover {
     color: #ddd;
 }
+/* Additional CSS Styles */
+
 /* Home Section */
 #home {
-    padding-top: 150px; /* Increased padding for better spacing */
+    padding-top: 100px; /* Reduced padding */
 }
 
 /* About Section */
 #about {
-    background-color: #fff; /* White background */
+    padding: 60px 0; /* Reduced padding */
 }
 
 /* Services Section */
-.services {
-    background-color: #f2f2f2; /* Light grey background */
+.services .service {
+    margin-bottom: 40px; /* Reduced margin */
+}
+
+.services .service-description {
+    color: #444; /* Dark grey text */
 }
 
 /* Gallery Section */
 #gallery {
-    background-color: #003649; /* Dark blue background */
+    background-color: #001f3f; /* Dark blue background */
 }
 
 /* Reviews Section */
@@ -200,10 +210,13 @@ body {
     background-color: #fff; /* White background */
 }
 
+.reviews .review-content {
+    color: #444; /* Dark grey text */
+}
+
 /* Contact Section */
 .contact {
-    background-color: #f2f2f2; /* Light grey background */
-    padding-bottom: 80px; /* Increased padding for better spacing */
+    background-color: #444; /* Darker grey background */
 }
 
 .contact form input[type="text"],
@@ -212,10 +225,12 @@ body {
 .contact form textarea,
 .contact form select {
     border-color: #005d8e; /* Blue border */
+    color: #fff; /* White text */
 }
 
 .contact form button {
     background-color: #005d8e; /* Blue background */
+    color: #fff; /* White text */
 }
 
 .contact form button:hover {
