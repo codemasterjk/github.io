@@ -187,14 +187,15 @@
 
         .social-links li a {
             color: #fff;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-
-        .social-links li a:hover {
-            color: #ddd;
-        }
-    </style>
+            text-decoration: none
+            
+;
+font-size: 1.5rem;
+}
+    .social-links li a:hover {
+        color: #ddd;
+    }
+</style>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -211,23 +212,23 @@
             </ul>
         </div>
     </nav>
-
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h2 class="hero-title">Welcome to Viktoria Flooring LLC</h2>
-            <p class="hero-subtitle">Exceptional Floor Installation and Replacement Services</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <p class="section-description">At Viktoria Flooring LLC, we take pride in providing top-notch floor installation and replacement services. With over 6 years of experience, we are dedicated to delivering exceptional results and customer satisfaction.</p>
-            <p class="section-description">Our team is comprised of skilled professionals who are committed to quality craftsmanship and attention to detail. We strive to exceed our customers' expectations on every project.</p>
-</div>
+<section id="home" class="hero">
+    <div class="container">
+        <h2 class="hero-title">Welcome to Viktoria Flooring LLC</h2>
+        <p class="hero-subtitle">Exceptional Floor Installation and Replacement Services</p>
+    </div>
 </section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-description">At Viktoria Flooring LLC, we take pride in providing top-notch floor installation and replacement services. With over 6 years of experience, we are dedicated to delivering exceptional results and customer satisfaction.</p>
+        <p class="section-description">Our team is comprised of skilled professionals who are committed to quality craftsmanship and attention to detail. We strive to exceed our customers' expectations on every project.</p>
+    </div>
+</section>
+
 <!-- Services Section -->
 <section id="services" class="services">
     <div class="container">
@@ -287,6 +288,14 @@
         <form action="submit_contact.php" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <input type="text" name="zip_code" placeholder="Zip Code" required>
+            <select name="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="floor_installation">Floor Installation</option>
+                <option value="floor_replacement">Floor Replacement</option>
+                <!-- Add more services as needed -->
+            </select>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
