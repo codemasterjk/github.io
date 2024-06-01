@@ -1,98 +1,226 @@
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f8f9fa;
     color: #333;
 }
 
 .container {
-    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 20px;
 }
 
-/* Header Styles */
-header {
-    background-color: #333;
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #343a40;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 40px 0;
 }
 
-header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.logo {
+    font-size: 1.8rem;
+    margin: 0;
 }
 
-header p {
-    font-size: 18px;
-}
-
-/* Navigation Styles */
-nav {
-    background-color: #444;
-}
-
-nav ul {
-    list-style: none;
+.nav-links {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li {
+.nav-links li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
-nav ul li a {
+/* Hero Section */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease;
+    padding: 100px 0;
+    text-align: center;
 }
 
-nav ul li a:hover {
-    color: #ffc107;
-}
-
-/* Section Styles */
-.section {
-    padding: 40px 0;
-}
-
-.section h2 {
-    font-size: 28px;
+.hero-title {
+    font-size: 3.5rem;
     margin-bottom: 20px;
 }
 
-.section p {
-    font-size: 16px;
-    line-height: 1.6;
+.hero-subtitle {
+    font-size: 1.5rem;
 }
 
-/* Gallery Styles */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-}
-
-.gallery img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: #fff;
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 80px 0;
     text-align: center;
-    padding: 20px 0;
 }
 
-footer p {
-    font-size: 14px;
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #007bff;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* Services Section */
+.services {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service-title {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.service-description {
+    font-size: 1.1rem;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.gallery-images img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Reviews Section */
+.reviews {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-content {
+    margin-bottom: 20px;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #007bff;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact form {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form input[type="tel"],
+.contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.contact form textarea {
+    height: 150px;
+}
+
+.contact form button {
+    background-color: #fff;
+    color: #007bff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.social-links li a:hover {
+    color: #ddd;
 }
