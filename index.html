@@ -620,3 +620,53 @@ body {
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Contact Us Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contact-form">
+        <p class="estimate">Free on-site estimate</p>
+        <form>
+            <label for="service">Select a service</label>
+            <select id="service" name="service">
+                <option>Floor Installation or Replace</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="zipcode">Zip code</label>
+            <input type="text" id="zipcode" name="zipcode" value="98030">
+
+            <label for="installType">Install type</label>
+            <select id="installType" name="installType">
+                <option>Select answer</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="floorSize">Floor size</label>
+            <select id="floorSize" name="floorSize">
+                <option>Select answer</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="flooringBuyer">Flooring buyer</label>
+            <select id="flooringBuyer" name="flooringBuyer">
+                <option>Select answer</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <button type="submit">Check availability</button>
+        </form>
+        <div class="status">
+            <span class="status-indicator"></span>
+            <span>Online now</span>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
